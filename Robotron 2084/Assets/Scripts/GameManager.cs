@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
         guiStyle.normal.textColor = Color.white;
         GUI.Label(new Rect(Screen.width/2 + 150,20,100,100),"Score : " + playerScore,guiStyle);
         GUI.Label(new Rect(Screen.width / 2 - 150, 20, 100, 100), "HP : " + HP, guiStyle);
-        if (GUI.Button(new Rect(Screen.width / 2 + 300, 350, 100, 40), "RESTART"))
+        if (GUI.Button(new Rect(Screen.width / 2 + 300, Screen.height - 50, 100, 40), "RESTART"))
         {
             HP = 10;
             playerScore = 0;
